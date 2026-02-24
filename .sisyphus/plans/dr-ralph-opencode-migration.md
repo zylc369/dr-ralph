@@ -248,7 +248,7 @@ Max Concurrent: 5 (Wave 2)
 
 ---
 
-- [ ] 3. **Verify websearch/webfetch availability**
+- [x] 3. **Verify websearch/webfetch availability**
 
   **What to do**:
   - 确认 OpenCode 中 `websearch` 和 `webfetch` 工具的可用性

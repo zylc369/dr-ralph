@@ -203,7 +203,7 @@ Max Concurrent: 5 (Wave 2)
 
 ---
 
-- [ ] 2. **Verify askquestion tool API**
+- [x] 2. **Verify askquestion tool API**
 
   **What to do**:
   - 验证 OpenCode 的 `askquestion` 工具（对应 Claude Code 的 `AskUserQuestion`）

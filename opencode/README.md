@@ -338,9 +338,8 @@ dr-ralph/
 │   ├── docs/
 │   │   └── diagnose-spec.md           # Full diagnostic specification
 │   ├── skills/                       # OpenCode skill definitions
-│   │   ├── dr-ralph-diagnose.md
-│   │   ├── dr-ralph-cancel.md
-│   │   └── dr-ralph-help.md
+│   │   └── dr-ralph/
+│   │       └── SKILL.md              # Core diagnostic skill definition
 │   └── AGENTS.md                     # Agent knowledge base
 ├── .sisyphus/                        # OpenCode state directory
 │   ├── plans/

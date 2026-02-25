@@ -13,10 +13,9 @@ hide-from-slash-command-tool: "true"
 
 # Dr. Ralph Diagnose Command
 
-Execute the setup script to initialize the full diagnostic workflow:
+Start the full diagnostic workflow using OpenCode's ralph-loop mechanism.
 
-`"${CLAUDE_PLUGIN_ROOT}/scripts/setup-dr-ralph-diagnose.sh" $ARGUMENTS`
-
+**Note:** This command defines the diagnostic workflow directly. No external setup script is needed (removed from Claude Code migration).
 ## PHASE-BASED WORKFLOW
 
 This command runs through 5 phases:

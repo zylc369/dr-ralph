@@ -118,12 +118,18 @@ fi
 
 # Create output directory
 mkdir -p "$OUTPUT_DIR"
+# Resolve @notes alias to real path for file operations
+if [[ "$OUTPUT_DIR" == "@notes" ]]; then
+  REAL_OUTPUT_DIR="notes"
+else
+  REAL_OUTPUT_DIR="$OUTPUT_DIR"
+fi
 
 # Sanitize patient name for filename
 PATIENT_FILE=$(echo "$PATIENT_NAME" | tr '[:upper:]' '[:lower:]' | tr ' ' '-' | tr -cd '[:alnum:]-')
-PATIENT_NOTES_PATH="$OUTPUT_DIR/$PATIENT_FILE.md"
+PATIENT_NOTES_PATH="$REAL_OUTPUT_DIR/$PATIENT_FILE.md"
 TIMESTAMP=$(date +%Y%m%d-%H%M%S)
-REPORT_PATH="$OUTPUT_DIR/$PATIENT_FILE-report-$TIMESTAMP.md"
+REPORT_PATH="$REAL_OUTPUT_DIR/$PATIENT_FILE-report-$TIMESTAMP.md"
 
 # Check for existing patient notes
 EXISTING_NOTES=""

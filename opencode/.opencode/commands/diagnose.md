@@ -60,3 +60,15 @@ If emergency symptoms are detected (chest pain + SOB, sudden severe headache, et
 
 - **Running Notes:** `@notes/[patient].md` - Updated throughout session
 - **Final Report:** `@notes/[patient]-report-[timestamp].md` - SOAP format
+
+
+## COMPLETION
+
+**CRITICAL:** After completing all 5 phases and writing the SOAP report, you MUST signal completion:
+
+- Output: `<promise>DONE</promise>`
+
+This signals the ralph-loop hook to stop iteration. The loop will not stop until this promise is detected.
+
+**If user provided `--completion-promise TEXT` flag:**
+- Output: `<promise>TEXT</promise>` (replace TEXT with the user's promise phrase)
